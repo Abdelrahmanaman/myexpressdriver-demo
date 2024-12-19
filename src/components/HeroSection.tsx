@@ -13,8 +13,8 @@ export default function HeroSection() {
 						</h1>
 						<p className="max-w-[50ch] text-lg">
 							Get an immediate quote for moving a vehicle anywhere in France and
-							Europe.
-							<Globe2 className="size-10" />
+							Europe
+							<Globe2 className="size-5 inline-block ml-2" />
 						</p>
 					</div>
 					<div className=" relative">

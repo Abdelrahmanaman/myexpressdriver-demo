@@ -39,7 +39,7 @@ const TransportRequestForm = () => {
 								type="text"
 								id={field.id}
 								name={field.id}
-								className="w-full  border max-w-72 rounded-2xl border-gray-300 bg-white px-8 py-2"
+								className="w-full  border max-w-72  focus:outline-none rounded-2xl  bg-white px-8 py-2"
 								placeholder={field.placeholder}
 							/>
 							<field.icon className="absolute top-3 left-3 size-4 fill-primary text-white" />
