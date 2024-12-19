@@ -6,19 +6,19 @@ const fields = [
 		id: "departure",
 		label: "Departure",
 		placeholder: "Enter departure location",
-		icon: <MapPin className="inline-block mr-2" />,
+		icon: MapPin,
 	},
 	{
 		id: "arrival",
 		label: "Arrival",
 		placeholder: "Enter arrival location",
-		icon: <MapPin className="inline-block mr-2" />,
+		icon: MapPin,
 	},
 	{
 		id: "registration",
 		label: "Registration Number",
 		placeholder: "Enter vehicle registration number",
-		icon: <Tag className="inline-block mr-2" />,
+		icon: Tag,
 	},
 ];
 
@@ -35,7 +35,7 @@ const TransportRequestForm = () => {
 							className="block text-gray-700 font-medium mb-2"
 							htmlFor={field.id}
 						>
-							{field.icon}
+							<field.icon className="inline-block mr-2" />
 							{field.label}
 						</label>
 						<input
