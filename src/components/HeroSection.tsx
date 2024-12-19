@@ -1,10 +1,11 @@
 import Image from "next/image";
-import React from "react";
+import TransportRequestForm from "./TransportRequestForm";
+import { Globe2 } from "lucide-react";
 
 export default function HeroSection() {
 	return (
 		<section className="">
-			<div className="my-40">
+			<div className="mt-40">
 				<div className="flex flex-col md:flex-row justify-between px-10">
 					<div className="space-y-10">
 						<h1 className="text-3xl text-primary w-[20ch] font-semibold">
@@ -13,6 +14,7 @@ export default function HeroSection() {
 						<p className="max-w-[50ch] text-lg">
 							Get an immediate quote for moving a vehicle anywhere in France and
 							Europe.
+							<Globe2 className="size-10" />
 						</p>
 					</div>
 					<div className=" relative">
@@ -23,9 +25,10 @@ export default function HeroSection() {
 							width={500}
 							height={500}
 						/>
-					</div>{" "}
+					</div>
 				</div>
 			</div>
+			<TransportRequestForm />
 		</section>
 	);
 }

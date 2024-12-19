@@ -5,58 +5,55 @@ const fields = [
 	{
 		id: "departure",
 		label: "Departure",
-		placeholder: "Enter departure location",
+		placeholder: "Departure",
 		icon: MapPin,
 	},
 	{
 		id: "arrival",
 		label: "Arrival",
-		placeholder: "Enter arrival location",
+		placeholder: "Arrival",
 		icon: MapPin,
 	},
 	{
 		id: "registration",
 		label: "Registration Number",
-		placeholder: "Enter vehicle registration number",
+		placeholder: " Vehicle registration number",
 		icon: Tag,
 	},
 ];
 
 const TransportRequestForm = () => {
 	return (
-		<div className="transport-request-form p-6 bg-gray-100 rounded shadow-md max-w-md mx-auto">
-			<h2 className="text-2xl font-bold mb-4 text-center">
-				Request a Transport
-			</h2>
-			<form>
+		<div className=" bg-primary/10  p-8 rounded-3xl">
+			<form className="md:flex flex-wrap justify-center items-center  gap-5">
 				{fields.map((field) => (
-					<div className="mb-4" key={field.id}>
+					<div key={field.id}>
 						<label
-							className="block text-gray-700 font-medium mb-2"
+							className="sr-only text-gray-700 font-medium mb-2"
 							htmlFor={field.id}
 						>
-							<field.icon className="inline-block mr-2" />
 							{field.label}
 						</label>
-						<input
-							type="text"
-							id={field.id}
-							name={field.id}
-							className="w-full p-2 border border-gray-300 rounded"
-							placeholder={field.placeholder}
-						/>
+						<div className="relative">
+							<input
+								type="text"
+								id={field.id}
+								name={field.id}
+								className="w-full  border max-w-72 rounded-2xl border-gray-300 bg-white px-8 py-2"
+								placeholder={field.placeholder}
+							/>
+							<field.icon className="absolute top-3 left-3 size-4 fill-primary text-white" />
+						</div>
 					</div>
 				))}
 
-				<div className="text-center">
-					<button
-						type="submit"
-						className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 flex items-center justify-center"
-					>
-						<Truck className="mr-2" />
-						Request Transport
-					</button>
-				</div>
+				<button
+					type="submit"
+					className="flex items-center w-72 justify-center bg-primary rounded-2xl text-white gap-2 p-2 cursor-pointer hover:bg-primary/80"
+				>
+					<Truck className="mr-2" />
+					Request Transport
+				</button>
 			</form>
 		</div>
 	);
