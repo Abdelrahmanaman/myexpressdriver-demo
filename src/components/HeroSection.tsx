@@ -13,7 +13,7 @@ export default function HeroSection() {
       <section className="pt-40 relative  h-[calc(100dvh-70px)] ">
         <div className="flex flex-col md:flex-row justify-between px-10">
           <div className="space-y-10">
-            <h1 className="text-3xl text-primary w-[20ch] font-semibold">
+            <h1 className="text-3xl text-primary max-w-[20ch] font-semibold">
               Moving your vehicles has never been easier.
             </h1>
             <p className="max-w-[50ch] text-lg">
@@ -32,12 +32,13 @@ export default function HeroSection() {
             />
           </div>
         </div>
-        <TransportRequestForm />
+
         <div className="grid bottom-32 left-1/2 absolute   place-items-center animate-bounce delay-1000">
           <Mouse className="size-7" />
           <ChevronDown className="size-7 " />
         </div>
       </section>
+      <TransportRequestForm />
       <ClientType />
       <Features />
       <PartnerSlider />
