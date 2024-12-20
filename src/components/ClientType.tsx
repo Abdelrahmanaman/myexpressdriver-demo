@@ -45,7 +45,7 @@ const cards: ClientTypeProps[] = [
 
 export default function ClientType() {
 	return (
-		<section className="py-10 h-dvh">
+		<section className="my-10">
 			<h2 className="text-2xl w-fit text-primary mb-6 relative after:content after:absolute after:w-full after:h-2 after:bg-primary after:-bottom-2 after:left-0">
 				You are...
 			</h2>
@@ -77,7 +77,7 @@ function ClientCard({ title, description, btn, href, src }: ClientTypeProps) {
 				</p>{" "}
 				<Link
 					href={href}
-					className="flex items-center w-fit hover:text-link text-primary"
+					className="flex hover:underline underline-offset-8 items-center w-fit hover:text-link text-primary"
 				>
 					{btn}
 					<ChevronRight className="size-5  ml-2" />

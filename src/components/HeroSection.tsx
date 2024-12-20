@@ -2,6 +2,7 @@ import Image from "next/image";
 import TransportRequestForm from "./TransportRequestForm";
 import { ChevronDown, Globe2, Mouse } from "lucide-react";
 import ClientType from "./ClientType";
+import Features from "../../Features";
 
 export default function HeroSection() {
 	return (
@@ -35,6 +36,7 @@ export default function HeroSection() {
 				</div>
 			</section>
 			<ClientType />
+			<Features />
 		</div>
 	);
 }

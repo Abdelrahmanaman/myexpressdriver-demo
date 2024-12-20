@@ -5,6 +5,7 @@
 	--color-foreground: var(--foreground);
 	--color-primary: var(--main);
 	--color-link: var(--orange);
+	--color-secondary: var(--secondary);
 }
 
 /*
@@ -29,6 +30,7 @@
 	--main: #074176;
 	--foreground: #171717;
 	--orange: #eb4c35;
+	--secondary: #dbe8ea;
 }
 
 body {
