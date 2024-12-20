@@ -1,11 +1,12 @@
 import Image from "next/image";
 import TransportRequestForm from "./TransportRequestForm";
-import { Globe2 } from "lucide-react";
+import { ChevronDown, Globe2, Mouse } from "lucide-react";
+import ClientType from "./ClientType";
 
 export default function HeroSection() {
 	return (
-		<section className="">
-			<div className="mt-40">
+		<div className="">
+			<section className="pt-40 relative  h-[calc(100dvh-70px)] ">
 				<div className="flex flex-col md:flex-row justify-between px-10">
 					<div className="space-y-10">
 						<h1 className="text-3xl text-primary w-[20ch] font-semibold">
@@ -27,8 +28,13 @@ export default function HeroSection() {
 						/>
 					</div>
 				</div>
-			</div>
-			<TransportRequestForm />
-		</section>
+				<TransportRequestForm />
+				<div className="grid bottom-32 left-1/2 absolute   place-items-center animate- delay-700">
+					<Mouse className="size-7" />
+					<ChevronDown className="size-7 " />
+				</div>
+			</section>
+			<ClientType />
+		</div>
 	);
 }

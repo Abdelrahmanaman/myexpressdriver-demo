@@ -25,7 +25,7 @@ const fields = [
 const TransportRequestForm = () => {
 	return (
 		<div className=" bg-primary/10  p-8 rounded-3xl">
-			<form className="md:flex flex-wrap justify-center items-center  gap-5">
+			<form className="flex flex-wrap justify-center items-center  gap-5">
 				{fields.map((field) => (
 					<div key={field.id}>
 						<label
